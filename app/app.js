@@ -1,12 +1,18 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+angular
+  .module('pdpAngular', ['ngRoute', 'ArticleControllers'])
+  .config(['$routeProvider', RouteProvider]);
+
+angular.module('ArticleControllers', []);
+
+function RouteProvider($routeProvider) {
+  $routeProvider
+    .when('/articles', {
+      templateUrl: 'articles/index.html',
+      controller: 'ArticlesIndexController'
+    })
+    .otherwise({
+      redirectTo: '/articles'
+    });
+};
