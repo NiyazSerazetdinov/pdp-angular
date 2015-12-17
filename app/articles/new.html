@@ -1,0 +1,15 @@
+<div class="small-8 columns small-centered">
+  <form name="newArticle" class="article-form" ng-submit="post(article)">
+    <div class="form-inputs">
+      <label for="title">Title</label>
+      <input type="text" id="title" ng-model="article.title">
+
+      <label for="text">Text</label>
+      <textarea id="text" ng-model="article.text"></textarea>
+    </div>
+
+    <div class="form-actions">
+      <input type="submit" value="Post" class="button">
+    </div>
+  </form>
+</div>
