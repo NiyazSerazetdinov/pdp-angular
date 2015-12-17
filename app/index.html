@@ -17,10 +17,25 @@
 </head>
 
 <body>
+  <div class="row">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1>
+            <a href="#/">My AngularJS App</a>
+          </h1>
+        </li>
+      </ul>
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+      <section class="top-bar-section">
+        <ul class="left">
+          <li>
+            <a href="#/articles/new">Write an article</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div>
 
   <main ng-view></main>
   <!-- In production use:
@@ -30,5 +45,6 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
   <script src="articles/articlesIndex.controller.js"></script>
+  <script src="articles/articlesNew.controller.js"></script>
 </body>
 </html>

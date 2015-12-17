@@ -1,16 +1,19 @@
 'use strict';
 
 angular
-  .module('pdpAngular', ['ngRoute', 'ArticleControllers'])
+  .module('pdpAngular', ['ngRoute', 'Articles'])
   .config(['$routeProvider', RouteProvider]);
 
-angular.module('ArticleControllers', []);
+angular.module('Articles', []);
 
 function RouteProvider($routeProvider) {
   $routeProvider
     .when('/articles', {
       templateUrl: 'articles/index.html',
       controller: 'ArticlesIndexController'
+    }).when('/articles/new', {
+      templateUrl: 'articles/new.html',
+      controller: 'ArticlesNewController'
     })
     .otherwise({
       redirectTo: '/articles'
