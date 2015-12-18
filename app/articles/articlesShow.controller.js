@@ -2,10 +2,10 @@
 
 angular
   .module('Articles')
-  .controller('ArticlesShowController', ['$scope', '$http','$routeParams', ArticlesShowController])
+  .controller('ArticlesShowController', ['$scope', '$http', '$routeParams', 'API_ROOT_URL', ArticlesShowController])
 
-function ArticlesShowController($scope, $http, $routeParams) {
-  var articleUrl = 'http://pdp-angular-api.herokuapp.com/v1/articles/'+$routeParams.articleId;
+function ArticlesShowController($scope, $http, $routeParams, API_ROOT_URL) {
+  var articleUrl = API_ROOT_URL + '/v1/articles/'+$routeParams.articleId;
 
   $http.get(articleUrl)
     .then(function(response) {

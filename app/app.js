@@ -1,10 +1,12 @@
 'use strict';
 
 angular
-  .module('pdpAngular', ['ngRoute', 'Articles'])
+  .module('pdpAngular', ['ngRoute', 'Articles', 'Comments'])
+  .constant('API_ROOT_URL', 'http://pdp-angular-api.herokuapp.com')
   .config(['$routeProvider', RouteProvider]);
 
 angular.module('Articles', []);
+angular.module('Comments', []);
 
 function RouteProvider($routeProvider) {
   $routeProvider
