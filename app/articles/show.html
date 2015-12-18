@@ -10,7 +10,7 @@
     </div>
 
     <div ng-repeat="comment in comments">
-      <div class="comment-text">{{comment.text}}</div>
+      <nw-comment comment="comment"></nw-comment>
     </div>
 
     <form name="newComment" class="comment-form" ng-submit="postComment(comment)">
