@@ -2,6 +2,7 @@
 
 angular
   .module('pdpAngular', ['ngRoute', 'Articles'])
+  .constant('API_ROOT_URL', 'http://pdp-angular-api.herokuapp.com')
   .config(['$routeProvider', RouteProvider]);
 
 angular.module('Articles', []);
