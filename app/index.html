@@ -43,10 +43,22 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="articles/articlesIndex.controller.js"></script>
-  <script src="articles/articlesNew.controller.js"></script>
-  <script src="articles/articlesShow.controller.js"></script>
+
+  <script src="app.module.js"></script>
+
+  <!-- core module -->
+  <script src="core/core.module.js"></script>
+  <script src="core/routes.js"></script>
+  <script src="core/constants.js"></script>
+
+  <!-- article module -->
+  <script src="articles/articles.module.js"></script>
+  <script src="articles/index.controller.js"></script>
+  <script src="articles/new.controller.js"></script>
+  <script src="articles/show.controller.js"></script>
+
+  <!-- article module -->
+  <script src="comments/comments.module.js"></script>
   <script src="comments/comments.directive.js"></script>
 </body>
 </html>
