@@ -28,3 +28,23 @@
   content: "";
   padding: 0;
 }
+
+.ng-dirty.ng-invalid {
+  border-color: red;
+}
+
+.ng-dirty.ng-valid {
+  border-color: green;
+}
+
+.comment {
+  padding: 0.5em 0px;
+}
+
+.comment-form {
+  padding: 1em 0px;
+}
+
+.articles, .article {
+  padding-bottom: 1em;
+}

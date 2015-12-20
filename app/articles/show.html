@@ -6,11 +6,11 @@
 
   <div class="comments">
     <div class="comments-header">
-      Comments:
+      <h5>Comments:</h5>
     </div>
 
     <div ng-repeat="comment in comments">
-      <nw-comment comment="comment"></nw-comment>
+      <pa-comment comment="comment"></pa-comment>
     </div>
 
     <form name="newComment" class="comment-form" ng-submit="postComment(comment)">
