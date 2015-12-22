@@ -29,11 +29,11 @@
   padding: 0;
 }
 
-.ng-dirty.ng-invalid {
+.ng-touched.ng-invalid {
   border-color: red;
 }
 
-.ng-dirty.ng-valid {
+.ng-touched.ng-valid {
   border-color: green;
 }
 
